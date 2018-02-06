@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="G E-seal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/geseal" />
+        <AutoCompleteTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AutoCompleteInput"
+            android:layout_below="@+id/geseal"
+            android:maxLength="3"
+            android:numeric="integer" />
+        <TextView
+            android:text="IMEI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etIMEI"
+            android:singleLine="true" />
+        <TextView
+            android:text="Shipment1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_below="@+id/spinner" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShipmentID"
+            android:layout_below="@+id/textview1"
+            android:singleLine="true" />
+        <TextView
+            android:text="No Mobil"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/ShipmentID" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_NoMobil"
+            android:layout_below="@+id/textView2"
+            android:singleLine="true" />
+        <TextView
+            android:text="Sopir"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txSopir"
+            android:layout_below="@+id/txt_NoMobil" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_NamaSopir"
+            android:layout_below="@+id/txSopir"
+            android:singleLine="true" />
+        <TextView
+            android:text="No DO"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txDo"
+            android:layout_below="@+id/txt_NamaSopir" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_NoDO"
+            android:layout_below="@+id/txDo"
+            android:singleLine="true" />
+        <TextView
+            android:text="No Job"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txJob"
+            android:layout_below="@+id/txt_NoDo" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_NoJob"
+            android:layout_below="@+id/txJob"
+            android:singleLine="true" />
+        <TextView
+            android:text="No Aju"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txAju"
+            android:layout_below="@+id/txt_NoJob" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_NoAju"
+            android:layout_below="@+id/txAju"
+            android:singleLine="true" />
+        <TextView
+            android:text="Pick Up Dari"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPcUp"
+            android:layout_below="@+id/txt_NoAju" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_PickUpDari"
+            android:layout_below="@+id/txPcUp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txCont"
+            android:text="No. Container"
+            android:layout_below="@+id/txt_PickUpDari" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_noContainer"
+            android:layout_below="@+id/txCont"
+            android:singleLine="true" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txTgl"
+            android:text="Tanggal Kirim"
+            android:layout_below="@+id/txt_noContainer" />
+        <EditText
+            android:inputType="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgl_date"
+            android:enabled="false"
+            android:editable="false"
+            android:layout_below="@+id/txTgl"
+            android:singleLine="true" />
+        <Button
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="47.0dp"
+            android:id="@+id/Btn_Submit"
+            android:background="#307FC1"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/tgl_date" />
+        <Button
+            android:text="Add New"
+            android:paddingTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="47.0dp"
+            android:id="@+id/Btn_Add"
+            android:background="#41f44d"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/Btn_Submit" />
+    </LinearLayout>
+</ScrollView>
